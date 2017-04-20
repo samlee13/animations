@@ -1,3 +1,5 @@
-<h1>
-  {{title}}
-</h1>
+<button [@grow]='state' (click)="grow('small' ? 'large' : 'small')">grow</button>
+
+<button [@flyInOut]='state' (click)="flyInOut('in' ? 'out' : 'in')">slide</button>
+
+<button [@fade]='state' (click)="fade('visible' ? 'invisible' : 'visible')">fade</button>
