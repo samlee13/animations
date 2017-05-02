@@ -1,9 +1,16 @@
 button {
-    float: center;
+    align-items: center;
     color: #77E772;
     background-color: #E772DE;
     border-color: #F99626;
     border-radius: 5px;
-    width: '50';
-    height: '80';
+}
+
+p {
+    text-align: center;
+    color: pink;
+}
+
+img {
+    float: center;
 }

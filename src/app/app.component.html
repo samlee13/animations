@@ -1,5 +1,14 @@
-<button [@grow]='state' (click)="grow('small' ? 'large' : 'small')">grow</button>
+<nav>
+<button [@flyInOut]='state' (click)="flyInOut()">
+    <a routerLink="/pages-home" routerLinkActive="active">home</a>
+</button>
 
-<button [@flyInOut]='state' (click)="flyInOut('in' ? 'out' : 'in')">slide</button>
+<button>
+    <a routerLink="/pages-contact" routerLinkActive="active">contact</a>
+</button>
 
-<button [@fade]='state' (click)="fade('visible' ? 'invisible' : 'visible')">fade</button>
+<button>
+    <a routerLink="/pages-pur" routerLinkActive="active">purpose</a>
+</button>
+</nav>
+<router-outlet></router-outlet>
