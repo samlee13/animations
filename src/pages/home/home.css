@@ -1,9 +1,56 @@
-button {
+#content{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+}
+
+#buttons {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#grow{
+    display: inline-block;
+    background-color: #77E772;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #F99626;
+    border-width: .5px;
+}
+
+#fade{
+    display: inline-block;
+    background-color: #77E772;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #F99626;
+    border-width: .5px;
+}
+
+#fly{
+    display: inline-block;
+    background-color: #77E772;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #F99626;
+    border-width: .5px;
+}
+
+button {
     color: #77E772;
     background-color: #E772DE;
     border-color: #F99626;
     border-radius: 5px;
+    margin: 5px;
 }
 
 p {
@@ -12,5 +59,9 @@ p {
 }
 
 img {
-    float: center;
+    display: flex;
+    justify-content: center;
+
+    width: 60px; 
+    height: 100px;
 }

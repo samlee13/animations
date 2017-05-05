@@ -1,14 +1,23 @@
 <nav>
-<button [@flyInOut]='state' (click)="flyInOut()">
-    <a routerLink="/pages-home" routerLinkActive="active">home</a>
-</button>
+    <div [@flyIn]='state'>
+        <button>
+            <a routerLink="/pages-home" routerLinkActive="active">
+                <img src="http://bit.ly/2qK7R6v"/>
+            </a>
+        </button>
 
-<button>
-    <a routerLink="/pages-contact" routerLinkActive="active">contact</a>
-</button>
+        <button>
+            <a routerLink="/pages-contact" routerLinkActive="active">
+                <img src="http://bit.ly/2q58aN9"/>
+            </a>
+        </button>
 
-<button>
-    <a routerLink="/pages-pur" routerLinkActive="active">purpose</a>
-</button>
+        <button>
+            <a routerLink="/pages-pur" routerLinkActive="active">
+                <img src="http://bit.ly/2q4NRPY"/>
+            </a>
+        </button>
+    </div>
 </nav>
+
 <router-outlet></router-outlet>

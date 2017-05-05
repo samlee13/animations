@@ -1,9 +1,18 @@
-html {
-    background-image: 'http://bit.ly/1Y4Kpxk';
+body {
+    background-color: #42f4c5;
+}
+#pur {
+    padding: 100px;
+
 }
 
 p{
+    display:flex;
+    justify-content: center;
+
     color: blue;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 11px;
+    font-size: 20px;
+    border-width: 5px;
+    border-color: black;
 }

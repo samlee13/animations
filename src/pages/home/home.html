@@ -1,8 +1,18 @@
-<img src= "https://upload.wikimedia.org/wikipedia/en/0/02/Homer_Simpson_2006.png"
- width="60" height="100">
+<div id="content">    
+        <img src= "https://upload.wikimedia.org/wikipedia/en/0/02/Homer_Simpson_2006.png">
+        <p>This is some text that I want to fade out with Homer. Somehow.</p>
+</div>
 
-<button [@grow]='state' (click)="grow()">grow</button>
+    <div id="buttons">
+        <div id="grow">
+            <button [@grow]='state' (click)="grow()">grow</button>
+        </div>
 
-<button [@flyInOut]='state' (click)="flyInOut()">slide</button>
+        <div id="fly">
+            <button [@flyInOut]='state' (click)="flyInOut()">slide</button>
+         </div>
 
-<button [@fade]='state' (click)="fade()">fade</button>
+        <div id="fade">
+            <button [@fade]='state' (click)="fade()">fade</button>
+        </div>
+    </div>
