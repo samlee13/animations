@@ -1,24 +1,15 @@
-<nav>
-    <!--i added the flyIn default animation to all of them through a div.-->
-    <div [@flyIn]='state'>
-        <button>
-            <a routerLink="/pages-home" routerLinkActive="active">
-                <img src="http://bit.ly/2qK7R6v"/>
-            </a>
-        </button>
 
-        <button>
-            <a routerLink="/pages-contact" routerLinkActive="active">
-                <img src="http://bit.ly/2q58aN9"/>
-            </a>
-        </button>
+    <div id="buttons">
+        <div id="grow">
+            <button [@grow]='state' (click)="grow()">grow</button>
+        </div>
 
-        <button>
-            <a routerLink="/pages-pur" routerLinkActive="active">
-                <img src="http://bit.ly/2q4NRPY"/>
-            </a>
-        </button>
+        <div id="fade">
+            <button [@fade]='state' (click)="fade()">fade</button>
+        </div>
+
+        <div id="fly">
+            <!-- here is the button with the click activations. these are located on the home page. -->
+            <button [@flyInOut]='state' (click)="flyInOut()">fly</button>
+         </div>
     </div>
-</nav>
-
-<router-outlet></router-outlet>

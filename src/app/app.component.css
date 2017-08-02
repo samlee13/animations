@@ -1,16 +1,29 @@
-nav{
-    display: flex;
-    flex-direction: row;
+#content{
+    display:flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
-img {
-    width: 70px;
-    height: 70px;
+#buttons {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#grow, #fade, #fly {
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    border-color: #F99626;
 }
 
 button {
-    display: inline-block;
-    background-color: Transparent;
-    border: none;
+    background-color: #E772DE;
+    border-color: #F99626;
+    border-radius: 5px;
+    margin: 5px;
+    color: #77E772;
 }
