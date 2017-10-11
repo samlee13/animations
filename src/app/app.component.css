@@ -1,29 +1,41 @@
-#content{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+#content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #buttons {
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-style: none;
 }
 
-#grow, #fade, #fly {
-    display: inline-block;
-    padding: 5px;
-    margin: 5px;
-    border-radius: 5px;
-    border-color: #F99626;
+#grow,
+#fade,
+#fly {
+  display: inline-block;
+  padding: 5px;
+  margin: 35px;
+  border-radius: 5px;
+  border: none;
+  background: none;
 }
 
 button {
-    background-color: #E772DE;
-    border-color: #F99626;
-    border-radius: 5px;
-    margin: 5px;
-    color: #77E772;
+  background-color: #e772de;
+  border-color: #f99626;
+  border-radius: 5px;
+  margin: 5px;
+  color: #77e772;
+}
+button:focus {
+  outline: 0;
+}
+
+#mom {
+  width: 100%;
+  text-align: center;
 }
