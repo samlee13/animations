@@ -1,4 +1,4 @@
-<div id="buttons">
+<!-- <div id="buttons">
     <button id='grow' [@grow]='state' (click)="growToggle()">
             <img  src="https://upload.wikimedia.org/wikipedia/en/5/59/Hulk_%28comics_character%29.png"
              width="25" height="30"/>
@@ -8,13 +8,18 @@
             <img  src="http://2.bp.blogspot.com/-L-h3bNgNtxU/UInoay89rJI/AAAAAAAAAKU/DahYpO2k75Q/s1600/violet_incredibles_shirt-d235887365662930498i0_500.jpg" width="30" height="30"/>
         </button>
 
-    <!-- here is the button with the click activations. these are located on the home page. -->
-    <button id='fly' [@slide]='state' (click)="slideToggle()">
+     <button id='fly' [@slide]='state' (click)="slideToggle()">
             <img  src="https://orig12.deviantart.net/67df/f/2016/284/c/8/the_flash___transparent_by_asthonx1-dakpdak.png" width="27" height="30"/>    
         </button>
+</div> -->
+
+
+<div>
+    <button (click)="toggleState()">Click Me</button>
 </div>
 
-<!-- <div>
-    <button (click)="toggle()">Click me</button><br />
-    <h2 *ngIf='hide' [@auto]>Hi Mom!</h2>
-</div> -->
+<div *ngIf="state" [@animateList]>
+    <div *ngFor="let color of colors">
+        <div class="box" [ngStyle]="{ 'background-color': color }"></div>
+    </div>
+</div>

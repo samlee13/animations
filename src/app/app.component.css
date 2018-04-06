@@ -1,4 +1,4 @@
-#content {
+/* #content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,9 +33,9 @@ button {
 }
 button:focus {
   outline: 0;
-}
+} */
 
-#mom {
-  width: 100%;
-  text-align: center;
+.box {
+  width: 100px;
+  height: 100px;
 }

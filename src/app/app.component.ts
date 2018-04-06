@@ -1,13 +1,15 @@
 import { state } from '@angular/animations';
 import { Component } from '@angular/core';
 
-import { autoAnimate, fade, grow, slide } from '../shared/animations';
+import { fade, grow2, slide, animateList } from '../shared/animations';
+
+import { colors } from '../shared/colors'
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  animations: [fade, slide, grow, autoAnimate]
+  animations: [fade, slide, grow2(2000), animateList]
   // animations: [
   //   trigger('grow' , [
   //   state('small', style({ transform: 'scale(1)' })),
@@ -18,26 +20,24 @@ import { autoAnimate, fade, grow, slide } from '../shared/animations';
   // ]
 })
 export class AppComponent {
-  state: string;
-  hide: boolean;
+  colors = colors;
+  //hide: boolean;
+  state = false;
 
-  growToggle(state) {
-    this.state = this.state === 'small' ? 'large' : 'small';
-  }
-
-  slideToggle(state) {
-    this.state = this.state === 'in' ? 'out' : 'in';
-  }
-
-  fadeToggle(state) {
-    this.state = this.state === 'visible' ? 'invisible' : 'visible';
-  }
-
-  invincibleToggle(state) {
-    this.state = this.state === 'no' ? 'yes' : 'no';
-  }
-
-  // toggle(){
-  //   this.hide = this.hide ? false : true;
+  // growToggle(state) {
+  //   this.state = this.state === 'small' ? 'large' : 'small';
   // }
+
+  // slideToggle(state) {
+  //   this.state = this.state === 'in' ? 'out' : 'in';
+  // }
+
+  // fadeToggle(state) {
+  //   this.state = this.state === 'visible' ? 'invisible' : 'visible';
+  // }
+
+  toggleState() {
+    this.state = !this.state;
+  }
+
 }
