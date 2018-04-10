@@ -1,8 +1,10 @@
 button {
   background-color: #e772de;
   border-color: #f99626;
-  border-radius: 5px;
+  border-width: 5px;
+  border-radius: 25px;
   margin: 5px;
+  padding: 20px;
   color: #77e772;
 }
 button:focus {
@@ -11,8 +13,9 @@ button:focus {
 
 .box {
   float: left;
-  margin: 50px;
-  width: 100px;
-  height: 100px;
+  margin: 5px;
+  margin-top: 50px;
+  width: 200px;
+  height: 200px;
   background-color: pink;
 }
