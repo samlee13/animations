@@ -5,7 +5,8 @@ button {
   border-radius: 25px;
   margin: 5px;
   padding: 20px;
-  color: #77e772;
+  color: #fff;
+  text-shadow: 2px 2px #ff0000;
 }
 button:focus {
   outline: 0;
