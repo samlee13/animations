@@ -1,5 +1,5 @@
 <div>
-    <button>
+    <button (click)="state = !state">
         <h1>
             Let's get animated!
         </h1>
@@ -7,4 +7,8 @@
     <h1>@TheLittlestDev</h1>
 </div>
 
-<div class="box"></div>
+<div *ngIf="state" [@animateList]>
+    <div *ngFor="let color of colors">
+        <div class="box" [ngStyle]="{ 'background-color': color}"></div>
+    </div>
+</div>
