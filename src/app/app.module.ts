@@ -5,10 +5,12 @@ import { HttpModule } from '@angular/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
+import { FadeInDirective } from "app/animate.directive";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FadeInDirective
   ],
   imports: [
     BrowserModule,
