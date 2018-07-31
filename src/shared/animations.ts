@@ -28,19 +28,3 @@ export const fade = trigger('fade', [
   state('yes', style({ opacity: 0.1 })),
   transition('* => *', animate('2000ms linear'))
 ]);
-
-export const animateList = trigger('animateList', [
-  //states defined by angular animations!
-  transition(':enter', [
-    query(':enter', style({ opacity: 0 })),
-    query(':enter', stagger('65ms', [
-      animate('65ms', style({ opacity: 1 }))
-    ]))
-  ]),
-  transition(':leave', [
-    query(':leave', style({ opacity: 1 })),
-    query(':leave', stagger('65ms reverse', [
-      animate('65ms', style({ opacity: 0 }))
-    ]))
-  ]),
-])
