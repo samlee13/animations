@@ -1,3 +1,14 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.boxes {
+  display: flex;
+  width: 99%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 button {
   background-color: #e772de;
   border-color: #f99626;
